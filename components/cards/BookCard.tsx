@@ -12,7 +12,7 @@ const BookCard = ({
     <Link href={`/book/${id}`}>
         <div className='relative h-72 w-48'>
           <Image
-            src={image}
+            src={image || ""}
             alt='book_image'
             fill
             className='rounded-xl object-cover hover:scale-105 duration-300 ease-in-out'

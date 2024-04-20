@@ -1,5 +1,4 @@
 'use client'
-import prisma from "@/utils/db";
 import React, { useEffect, useState } from "react";
 import BookCard from "./cards/BookCard";
 import { fetchBooks } from "@/lib/actions/book.actions";
