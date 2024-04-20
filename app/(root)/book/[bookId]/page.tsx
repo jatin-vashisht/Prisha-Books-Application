@@ -11,7 +11,7 @@ import { BookProps } from "@/types";
 
 const Page = () => {
   const { bookId } = useParams();
-  const [book, setBook] = useState<BookProps | null>();
+  const [book, setBook] = useState<BookProps>();
   const [showPDF, setShowPDF] = useState(false);
   const [showRating, setShowRating] = useState(false);
   const [userRating, setUserRating] = useState<number>(-1);
@@ -80,7 +80,7 @@ const Page = () => {
         <div className="flex flex-col lg:flex-row gap-12 mt-10">
           <div className="relative w-[400px] h-[500px]">
             <Image
-              src={book.image}
+              src={book?.image || ""}
               alt="book_image"
               fill
               className="rounded-xl object-cover"

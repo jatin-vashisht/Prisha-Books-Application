@@ -4,8 +4,8 @@ export interface BookProps {
   author: string;
   description: string;
   readTime: number;
-  image: string;
-  pdf: string;
+  image: string | null;
+  pdf: string | null;
   rating: number;
   userId: string;
 }
